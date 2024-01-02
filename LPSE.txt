@@ -1,0 +1,7 @@
+1. Grafik Perbandingan HPS dan Efisiensi (Tender & Non Tender) - 1 halaman
+2. Filter Datable paket 
+	- Tender & N-Tender
+	- Kategori
+	- Tahapan
+	- Periode
+3. Grafik Pie (Dashboard) Tahapan Tender & Non Tender

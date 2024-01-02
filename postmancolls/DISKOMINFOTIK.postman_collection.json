@@ -1,0 +1,1177 @@
+{
+	"info": {
+		"_postman_id": "21111f17-805e-44af-8725-7048d5acb823",
+		"name": "DISKOMINFOTIK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SIMPEG BKD",
+			"item": [
+				{
+					"name": "UNIT KERJA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://simpeg.bkd.sumbarprov.go.id/webapi/instansi/unit-kerja/utama/token/XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45",
+							"protocol": "http",
+							"host": [
+								"simpeg",
+								"bkd",
+								"sumbarprov",
+								"go",
+								"id"
+							],
+							"path": [
+								"webapi",
+								"instansi",
+								"unit-kerja",
+								"utama",
+								"token",
+								"XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JABATAN ASN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://simpeg.bkd.sumbarprov.go.id/webapi/pegawai/jabatan/list/token/XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45/opd/2496",
+							"protocol": "http",
+							"host": [
+								"simpeg",
+								"bkd",
+								"sumbarprov",
+								"go",
+								"id"
+							],
+							"path": [
+								"webapi",
+								"pegawai",
+								"jabatan",
+								"list",
+								"token",
+								"XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45",
+								"opd",
+								"2496"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://simpeg.bkd.sumbarprov.go.id/webapi/pegawai/asn/list/token/XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45/opd/2496",
+							"protocol": "http",
+							"host": [
+								"simpeg",
+								"bkd",
+								"sumbarprov",
+								"go",
+								"id"
+							],
+							"path": [
+								"webapi",
+								"pegawai",
+								"asn",
+								"list",
+								"token",
+								"XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45",
+								"opd",
+								"2496"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASN PIMPINAN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://simpeg.bkd.sumbarprov.go.id/webapi/pegawai/asn/pimpinan/token/XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45/nip/199105092015021002",
+							"protocol": "http",
+							"host": [
+								"simpeg",
+								"bkd",
+								"sumbarprov",
+								"go",
+								"id"
+							],
+							"path": [
+								"webapi",
+								"pegawai",
+								"asn",
+								"pimpinan",
+								"token",
+								"XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45",
+								"nip",
+								"199105092015021002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASN DETAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://simpeg.bkd.sumbarprov.go.id/webapi/pegawai/asn/detail/token/XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45/nip/199105092015021002",
+							"protocol": "http",
+							"host": [
+								"simpeg",
+								"bkd",
+								"sumbarprov",
+								"go",
+								"id"
+							],
+							"path": [
+								"webapi",
+								"pegawai",
+								"asn",
+								"detail",
+								"token",
+								"XBnKaywRCrj05m-XXX-v6DXuZ3FFkUgiw45",
+								"nip",
+								"199105092015021002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SIPENDEKAR",
+			"item": [
+				{
+					"name": "LOCAL",
+					"item": [
+						{
+							"name": "Kebakaran",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nama",
+											"value": "tes",
+											"type": "text"
+										},
+										{
+											"key": "no_hp",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "pesan",
+											"value": "tes",
+											"type": "text"
+										},
+										{
+											"key": "kabupaten",
+											"value": "tanah datar",
+											"type": "text"
+										},
+										{
+											"key": "kecamatan",
+											"value": "lima kaum",
+											"type": "text"
+										},
+										{
+											"key": "lokasi",
+											"value": "padang",
+											"type": "text"
+										},
+										{
+											"key": "lat",
+											"value": "234234234",
+											"type": "text"
+										},
+										{
+											"key": "lng",
+											"value": "234234243",
+											"type": "text"
+										},
+										{
+											"key": "file_ext",
+											"value": "jpg",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"value": "12313212313",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://sipendekar.sumbarprov.go.id/api/pelaporan/kebakaran",
+									"protocol": "https",
+									"host": [
+										"sipendekar",
+										"sumbarprov",
+										"go",
+										"id"
+									],
+									"path": [
+										"api",
+										"pelaporan",
+										"kebakaran"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Kebakaran",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://sipendekar.sumbarprov.go.id/api/pelaporan/kebakaran?status=1",
+									"protocol": "https",
+									"host": [
+										"sipendekar",
+										"sumbarprov",
+										"go",
+										"id"
+									],
+									"path": [
+										"api",
+										"pelaporan",
+										"kebakaran"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "admin.kab.tanah.datar",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{LOCAL}}/kominfo/sipendekar/api/pelaporan/login",
+									"host": [
+										"{{LOCAL}}"
+									],
+									"path": [
+										"kominfo",
+										"sipendekar",
+										"api",
+										"pelaporan",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TESTING",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "admin.kab.tanah.datar",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{TESTING 1}}/sipendekar/api/pelaporan/login",
+									"host": [
+										"{{TESTING 1}}"
+									],
+									"path": [
+										"sipendekar",
+										"api",
+										"pelaporan",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PRODUCTION",
+					"item": [
+						{
+							"name": "LOGIN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "admin.kab.tanah.datarjj",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{SIPENDEKAR}}/api/pelaporan/login",
+									"host": [
+										"{{SIPENDEKAR}}"
+									],
+									"path": [
+										"api",
+										"pelaporan",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "KEBAKARAN",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SIPENDEKAR}}/api/pelaporan/kebakaran",
+									"host": [
+										"{{SIPENDEKAR}}"
+									],
+									"path": [
+										"api",
+										"pelaporan",
+										"kebakaran"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "KEBAKARAN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{SIPENDEKAR}}/api/pelaporan/kebakaran",
+									"host": [
+										"{{SIPENDEKAR}}"
+									],
+									"path": [
+										"api",
+										"pelaporan",
+										"kebakaran"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LAPOR GUB",
+			"item": [
+				{
+					"name": "PRODUCTION",
+					"item": [
+						{
+							"name": "Master Instansi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://laporgub.sumbarprov.go.id/api/master/instansi",
+									"protocol": "https",
+									"host": [
+										"laporgub",
+										"sumbarprov",
+										"go",
+										"id"
+									],
+									"path": [
+										"api",
+										"master",
+										"instansi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Master Kategori",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://laporgub.sumbarprov.go.id/api/master/kategori",
+									"protocol": "https",
+									"host": [
+										"laporgub",
+										"sumbarprov",
+										"go",
+										"id"
+									],
+									"path": [
+										"api",
+										"master",
+										"kategori"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lapor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id_kategori",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "tes",
+											"type": "text"
+										},
+										{
+											"key": "isi",
+											"value": "tes",
+											"type": "text"
+										},
+										{
+											"key": "tgl_kejadian",
+											"value": "2020-12-12",
+											"type": "text"
+										},
+										{
+											"key": "id_kab",
+											"value": "13.04",
+											"type": "text"
+										},
+										{
+											"key": "id_kec",
+											"value": "13.04.12",
+											"type": "text"
+										},
+										{
+											"key": "id_kel",
+											"value": "13.04.12.12",
+											"type": "text"
+										},
+										{
+											"key": "id_instansi",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "lampiran",
+											"value": "2123132123",
+											"type": "text"
+										},
+										{
+											"key": "lampiran_ext",
+											"value": "jpg",
+											"type": "text"
+										},
+										{
+											"key": "id_user",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://laporgub.sumbarprov.go.id/api/laporan/lapor",
+									"protocol": "https",
+									"host": [
+										"laporgub",
+										"sumbarprov",
+										"go",
+										"id"
+									],
+									"path": [
+										"api",
+										"laporan",
+										"lapor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ESIGN CLIENT",
+			"item": [
+				{
+					"name": "Development",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "qwerty",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "esign",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nik",
+									"value": "0803202100007062",
+									"type": "text"
+								},
+								{
+									"key": "passphrase",
+									"value": "#1234Qwer*",
+									"type": "text"
+								},
+								{
+									"key": "tampilan",
+									"value": "visible",
+									"type": "text"
+								},
+								{
+									"key": "halaman",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "linkQR",
+									"value": "https://google.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xAxis",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "yAxis",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "width",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "tag_koordinat",
+									"value": "#",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/OneDrive/Desktop/KONSEP-8B5AEE23159C46A1841C74580BA74B5F-MOHON.KOREKSI.pdf"
+								},
+								{
+									"key": "imageTTD",
+									"type": "file",
+									"src": "/C:/Users/ACER/Downloads/WhatsApp Image 2021-09-22 at 14.58.38.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.100.1.88/api/sign/pdf",
+							"protocol": "http",
+							"host": [
+								"10",
+								"100",
+								"1",
+								"88"
+							],
+							"path": [
+								"api",
+								"sign",
+								"pdf"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SIGN DOKUMEN - Visible with QR_Code Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eb6b7f80-42b0-4297-9bb9-c18db74037bf",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"description": "pdf",
+											"type": "file",
+											"src": "/C:/Users/egovp/Desktop/ayat.pdf"
+										},
+										{
+											"key": "imageTTD",
+											"description": "jpg/jpeg/png/",
+											"type": "file",
+											"src": "/F:/Backup Flashdisk Nani/WhatsApp Image 2021-08-19 at 14.15.06.jpeg",
+											"disabled": true
+										},
+										{
+											"key": "nik",
+											"value": "1305010305760001",
+											"description": "*wajib",
+											"type": "text"
+										},
+										{
+											"key": "passphrase",
+											"value": "Azifa4250",
+											"description": "* wajib; Parameter diinput oleh Pengguna dari Field/Isian",
+											"type": "text"
+										},
+										{
+											"key": "tampilan",
+											"value": "true",
+											"description": "* [invisible / visible]\n- inisible: maka seluruh parameter dibawah, tidak perlu diisi\n- visible: maka seluruh parameter dibawah wajib diisi\n",
+											"type": "text"
+										},
+										{
+											"key": "halaman",
+											"value": "",
+											"description": "* [pertama/terakhir] untuk letak halaman visualisasi, gunakan salah satu diantara \"halaman\" atau \"page\"",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "* [int] nomor halaman, untuk letak halaman visualisasi, gunakan salah satu diantara \"halaman\" atau \"page\"",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "true",
+											"description": "* jika \"false\", maka linkQR wajib diisi -> Visualisasi berupa QRCode\n** jika \"true\", maka linkQR tidak wajib diisi -> Visualisasi berupa Spesimen tanda tangan. Silahkan lengkapi parameter imageTTD pada Body",
+											"type": "text"
+										},
+										{
+											"key": "linkQR",
+											"value": "https://www.google.com/",
+											"description": "*jika image == false, maka wajib diisi",
+											"type": "text"
+										},
+										{
+											"key": "xAxis",
+											"value": "0",
+											"description": "*jika tampilan = visible, maka wajib diisi",
+											"type": "text"
+										},
+										{
+											"key": "yAxis",
+											"value": "0",
+											"description": "*jika tampilan = visible, maka wajib diisi",
+											"type": "text"
+										},
+										{
+											"key": "width",
+											"value": "550",
+											"description": "*jika tampilan = visible, maka wajib diisi",
+											"type": "text"
+										},
+										{
+											"key": "height",
+											"value": "150",
+											"description": "*jika tampilan = visible, maka wajib diisi",
+											"type": "text"
+										},
+										{
+											"key": "reason",
+											"value": "",
+											"description": "*opsional",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "location",
+											"value": "",
+											"description": "*opsional",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "text",
+											"value": "",
+											"description": "*opsional",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://103.160.118.205/api/sign/pdf",
+									"protocol": "http",
+									"host": [
+										"103",
+										"160",
+										"118",
+										"205"
+									],
+									"path": [
+										"api",
+										"sign",
+										"pdf"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Development Copy",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "surekpp",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Qwerty@12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nik",
+									"value": "1305010305760001",
+									"type": "text"
+								},
+								{
+									"key": "passphrase",
+									"value": "Azifa4250",
+									"type": "text"
+								},
+								{
+									"key": "tampilan",
+									"value": "visible",
+									"type": "text"
+								},
+								{
+									"key": "halaman",
+									"value": "PERTAMA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "linkQR",
+									"value": "https://google.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xAxis",
+									"value": "50",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "yAxis",
+									"value": "50",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "width",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "tag_koordinat",
+									"value": "#",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/egovp/Desktop/ayat.pdf"
+								},
+								{
+									"key": "imageTTD",
+									"type": "file",
+									"src": "/F:/Backup Flashdisk Nani/WhatsApp Image 2021-08-19 at 14.15.06.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://103.160.118.205/api/sign/pdf",
+							"protocol": "http",
+							"host": [
+								"103",
+								"160",
+								"118",
+								"205"
+							],
+							"path": [
+								"api",
+								"sign",
+								"pdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Production",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Qwerty@1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "surek",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nik",
+									"value": "0803202100007062",
+									"type": "text"
+								},
+								{
+									"key": "passphrase",
+									"value": "#1234Qwer*",
+									"type": "text"
+								},
+								{
+									"key": "tampilan",
+									"value": "visible",
+									"type": "text"
+								},
+								{
+									"key": "halaman",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "linkQR",
+									"value": "https://google.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "xAxis",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "yAxis",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "width",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "tag_koordinat",
+									"value": "#",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "text",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/OneDrive/Desktop/KONSEP-8B5AEE23159C46A1841C74580BA74B5F-MOHON.KOREKSI.pdf"
+								},
+								{
+									"key": "imageTTD",
+									"type": "file",
+									"src": "/C:/Users/ACER/Downloads/WhatsApp Image 2021-09-22 at 14.58.38.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.5.49.98/api/sign/pdf",
+							"protocol": "http",
+							"host": [
+								"10",
+								"5",
+								"49",
+								"98"
+							],
+							"path": [
+								"api",
+								"sign",
+								"pdf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SUREK",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "199105092015021002",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123qweasd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/me/surek/api/login/index",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"me",
+								"surek",
+								"api",
+								"login",
+								"index"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "LOCAL",
+			"value": "http://localhost"
+		},
+		{
+			"key": "TESTING 1",
+			"value": "https://testing.sumbarprov.go.id"
+		},
+		{
+			"key": "SIPENDEKAR",
+			"value": "http://10.5.49.25"
+		}
+	]
+}

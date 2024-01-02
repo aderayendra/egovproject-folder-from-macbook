@@ -1,0 +1,34 @@
+server {
+	# listen 443 ssl;
+	# listen [::]:443 ssl;
+	listen 80;
+	listen [::]:80;
+
+	# ssl_certificate /home/pdgprm/.ssl/absensi.padangpariamankab.go.id_ssl_bundle.crt;
+
+	# ssl_certificate_key /home/pdgprm/.ssl/absensi.padangpariamankab.go.id.key;
+
+	root /var/www/absensi.padangpariamankab.go.id;
+	index index.php index.html index.htm;
+
+	server_name absensi-pdn.padangpariamankab.go.id;
+
+	location ~* \.(ico|css|js|gif|jpe?g|png)(\?[0-9]+)?$ {
+                expires max;
+                log_not_found off;
+        }
+
+        location / {
+		# Check if a file or directory index file exists, else route it to index.php.
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+        location /api-absen {
+                try_files $uri $uri/ /api-absen/index.php?$args;
+        }
+
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        }
+}

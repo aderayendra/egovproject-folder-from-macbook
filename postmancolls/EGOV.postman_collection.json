@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "bfabf7f7-4e17-482d-b8c6-21a39ff086de",
+		"name": "EGOV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8181/auth/login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkZS5yYXllbmRyYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNjQwNzU0NDUyfQ.IfpHpnfyBCfupWsBrrqSjDEuiZ3vxyd3g0_Dmla_PLk",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"new.superuser\",\r\n    \"password\": \"new.superuser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/auth/logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkZS5yYXllbmRyYSIsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNjQwNzY1NjM1fQ.pXMnbln64HwHY_5phYzzi-8qqr4yCg_e00PEi8YY2XE",
+						"type": "string"
+					}
+				],
+				"url": {
+					"raw": "localhost:8181/auth/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/server/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2JkMWFiMDY5YmM2YjUzZTE5NjY5NiIsInVzZXJuYW1lIjoiYWRlLnJheWVuZHJhIiwicm9sZSI6InN5c3RlbWFkbWluIiwiaWF0IjoxNjQwODI5NDE5fQ.GkXYCpjZSoS9NMkfvsSAL3iqtgnzk6xPecPztGngA6M",
+						"type": "string"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serverName\": \"Gateway Server 2 6285161333730\",\r\n    \"whatsappNumber\": \"6285161333731\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8181/server/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"server",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/server/isonwa/6285763213730",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/server/isonwa/6285763213730",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"server",
+						"isonwa",
+						"6285763213730"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/auth/refresh-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8181/auth/refresh-token",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"auth",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/server/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serverId\": \"61d512791527a18b04037531\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8181/server/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"server",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://oauth2.googleapis.com/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://oauth2.googleapis.com/token",
+					"protocol": "https",
+					"host": [
+						"oauth2",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://fcm.googleapis.com/v1/projects/siapkan-padang-pariaman-f2bc6/messages:send",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ya29.A0ARrdaM8E6kBCJiz2n2UlA28L9ZNfSMdWLXZaoJkftIddKwmQcTKCosqJNMCLbrKhYQV8ZcZDanJZoG5EVM6I1WKoqlYvKT1D5agtTItjR9uaBPRr6Jp8zGncNfAXJHETOA-_7RnV1FrFoj4icqoHcXwd-5wm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": {\r\n    \"token\":\"e09GGgkaQV2ZXwUahykrN_:APA91bFrh-RYunE6kxr5iUV8o6G9rWk9ESg_PYR5nqegWJ6SwpAU5xbvjKDqxM7t7VDPBMXR9pL43GHmEZDo7lgvVtbIKKnjRKH3-1XtCjBUJs0k9NWITZSk9LqEBTle6P5I2wgRC9As\",\r\n    \"data\": {\r\n      \"title\": \"notification\",\r\n      \"channel\": \"general\",\r\n      \"body\": \"tgtrr\",\r\n      \"other\": \"other data here\"\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/v1/projects/siapkan-padang-pariaman-f2bc6/messages:send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"projects",
+						"siapkan-padang-pariaman-f2bc6",
+						"messages:send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://siapkan.padangpariamankab.go.id/guzzle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filepdf",
+							"type": "file",
+							"src": "/C:/Users/egovp/Desktop/ayat.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://siapkan.padangpariamankab.go.id/guzzle",
+					"protocol": "http",
+					"host": [
+						"siapkan",
+						"padangpariamankab",
+						"go",
+						"id"
+					],
+					"path": [
+						"guzzle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://siapkan.padangpariamankab.go.id/login/validate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "tu.kominfo",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "kominfo1",
+							"type": "default"
+						},
+						{
+							"key": "submit",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://siapkan.padangpariamankab.go.id/login/validate",
+					"protocol": "http",
+					"host": [
+						"siapkan",
+						"padangpariamankab",
+						"go",
+						"id"
+					],
+					"path": [
+						"login",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "siapkan.padangpariamankab.go.id/apisign/eoffice/signature/approve",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "passkey",
+							"value": "Azifa4250",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "38",
+							"type": "default"
+						},
+						{
+							"key": "user",
+							"value": "zahirman",
+							"type": "default"
+						},
+						{
+							"key": "token",
+							"value": "680cd9c17f3f9ccb2f19e759f20724da",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "siapkan.padangpariamankab.go.id/apisign/eoffice/signature/approve",
+					"host": [
+						"siapkan",
+						"padangpariamankab",
+						"go",
+						"id"
+					],
+					"path": [
+						"apisign",
+						"eoffice",
+						"signature",
+						"approve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/user/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"hehehehe\",\r\n    \"name\": \"hehe hehe\",\r\n    \"password\": \"hehehehe\",\r\n    \"email\": \"ade.rayendra@gmail.com\",\r\n    \"role\": \"user\",\r\n    \"whatsappNumber\": \"6282381406008\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8181/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/server/logout-server",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serverId\": \"61d3f21331df330ba8d976d6\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8181/server/logout-server",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"server",
+						"logout-server"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/server/update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serverId\": \"61d3f21331df330ba8d976d6\",\r\n    \"whatsappNumber\": \"6285763213730\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8181/server/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"server",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
